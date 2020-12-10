@@ -646,15 +646,15 @@ int main() {
 class Person {
 public:
 	std::string get_name() const { // 注意在类里边定义的函数会自动内联
-		return_name;
+		return _name;
     }
 	int get_age() const {
-        return_age;
+        return _age;
     }
     
 private:
-	std::string_name;
-	int_age;
+	std::string _name;
+	int _age;
 
 };
 
@@ -806,7 +806,7 @@ void new_copy(void *dest, const void *src, size_t n) {
 if (is_valid) {
     ...
 }
-if (lis_finished) {
+if (list_finished) {
 	...
 }
 ```
